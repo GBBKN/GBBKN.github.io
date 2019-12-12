@@ -16,6 +16,10 @@ var section1Pic = document.getElementById("section1Pic")
 var section2Pic = document.getElementById("section2Pic")
 var section1B = document.getElementById("section1B")
 var section2B = document.getElementById("section2B")
+var postId = document.getElementById("postId")
+var embedcontainer1 = document.getElementById("embedcontainer1")
+var embedcontainer2 = document.getElementById("embedcontainer2")
+var embedcontainer3 = document.getElementById("embedcontainer3")
 
 mainVideoBox.style.display = "none";
 section1VideoBox.style.display = "none";
@@ -29,16 +33,20 @@ function onReadingTab() {
   mainVideoBox.style.display = "none";
   section1VideoBox.style.display = "none";
   section2VideoBox.style.display = "none";
+  postId.style.display = "none";
+  embedcontainer1.style.display = "none";
+  embedcontainer2.style.display = "none";
+  embedcontainer3.style.display = "none";
   mainPicBox.style.display = "block";
   section1PL.style.display = "block";
   section2PL.style.display = "block";
   mainBnt.innerHTML="Full Story"
   changeSection2Reading()
   mainTatle.innerHTML = "Look Here";
-  mainSubTatle.innerHTML = "A cat sitting up on the wall is watching you."
+  mainSubTatle.innerHTML = "What if the thing you see, the sound you hear is not so truthful."
   mainPic.setAttribute("src","images/cat.jpg")
-  mainPicBox.setAttribute('href', 'https://www.worldcat.org/title/cat-at-the-wall/oclc/1030295317?loc=')
-  mainBnt.setAttribute('href', 'https://www.worldcat.org/title/cat-at-the-wall/oclc/1030295317?loc=')
+  mainPicBox.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
+  mainBnt.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
   
 }
 
@@ -47,11 +55,15 @@ function onWatchingTab(){
   mainVideoBox.style.display = "block";
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
+  postId.style.display = "block";
+  embedcontainer1.style.display = "block";
+  embedcontainer2.style.display = "block";
+  embedcontainer3.style.display = "block";
   mainPicBox.style.display = "none";
   section1PL.style.display = "none";
   section2PL.style.display = "none";
   mainBnt.innerHTML="Watch In New Tab"
-  var turl = " https://youtu.be/C8f30ap9RNM"
+  var turl = "https://youtu.be/GveeYDmbpvA"
   var url = turl.replace("https://youtu.be","https://youtube.com/embed")
   
   mainTatle.innerHTML = "Watch Closely";
@@ -67,6 +79,10 @@ function onListeningTab(){
   mainVideoBox.style.display = "block";
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
+  postId.style.display = "block";
+  embedcontainer1.style.display = "block";
+  embedcontainer2.style.display = "block";
+  embedcontainer3.style.display = "block";
   mainPicBox.style.display = "none";
   section1PL.style.display = "none";
   section2PL.style.display = "none";
@@ -75,7 +91,7 @@ function onListeningTab(){
   mainTatle.innerHTML = "Listen Carefully";
   mainSubTatle.innerHTML = "The Cult of Social Media Wellness, Debunked"
   mainBnt.setAttribute('href', "https://soundcloud.com/user-944127072/the-cult-of-social-media-wellness-debunked")
-  mainVideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/715226767&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+  mainVideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/725542732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
   changeSection2Listening()
 
 
@@ -93,7 +109,7 @@ function changeSection2Reading(){
   section1HL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
   section2HL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
   section1HL.innerHTML="Those Living in Hurricane Alley Should Use Social Media Wisely"
-  section2HL.innerHTML="How Booking Websites Empty Your Wallet"
+  section2HL.innerHTML="How Booking Websites Empty Your Wallet <br> <br>"
   section1PL.setAttribute('href','images/0_xsvtiBYJqYlHlxmL.jfif')
   section2PL.setAttribute('href','images/DTZT7dBV4AAcZpS.jpg')
   section1Pic.setAttribute('src','images/0_xsvtiBYJqYlHlxmL.jfif')
@@ -114,7 +130,7 @@ function changeSection2Watching(){
   section1HL.setAttribute('href',urlt1)
   section2HL.setAttribute('href',urlt2)
   section1HL.innerHTML="Facebook's role in Brexit — and the threat to democracy | Carole Cadwalladr"
-  section2HL.innerHTML="Can we choose to fall out of love? | Dessa"
+  section2HL.innerHTML="<br> Can we choose to fall out of love? | Dessa <br> <br>"
   section1VideoBox.setAttribute('src',url1)
   section2VideoBox.setAttribute('src',url2)
   section1Pic.setAttribute('src','')
@@ -130,7 +146,7 @@ function changeSection2Watching(){
 function changeSection2Listening(){
   section1HL.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
   section2HL.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
-  section1HL.innerHTML="Don't Chase the Likes..."
+  section1HL.innerHTML="<br> <br> Don't Chase the Likes... <br> <br> "
   section2HL.innerHTML="Music In The Age of Democratization: Gerhard Behles & Matt Black in Conversation"
   section1VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340083175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
   section2VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169306315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")

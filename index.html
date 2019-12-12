@@ -54,15 +54,17 @@
 					<div id="main">
 
 						<!-- Featured Post -->
-							<article class="post featured">
+							<article id="postId" class="post featured" style="display:none">
 								<header class="major">
 									<h2 id="mainTatle">Look Here</h2>
-									<p id="mainSubTatle">A cat sitting up at the wall is watching you.</p>
+									<p id="mainSubTatle">What if the thing you see, the sound you hear is not so truthful.</p>
 								</header>
-								<a id="mainPicBox" href="https://www.goodreads.com/book/show/20662575-the-cat-at-the-wall" target="_blank" class="image main"><img id="mainPic" src="images/cat.jpg" alt="" /></a>
+								<a id="mainPicBox" href="https://en.wikipedia.org/wiki/Optical_illusion" target="_blank" class="main"><img id="mainPic" src="images/cat.jpg" alt="" /></a>
+								<div class='embed-container' id="embedcontainer1" style="display:none">
 								<iframe style="padding:20px" id="mainVideoBox"  width="100%" height="600" src=""  frameborder="0" allowfullscreen ></iframe>
+								</div>
 								<ul class="actions special">
-									<li><a id="mainBnt" href="https://www.goodreads.com/book/show/20662575-the-cat-at-the-wall" target="_blank" class="button large">Full Story</a></li>
+									<li><a id="mainBnt" href="https://en.wikipedia.org/wiki/Optical_illusion" target="_blank" class="button large">Full Story</a></li>
 								</ul>
 							</article>
 
@@ -74,7 +76,9 @@
 										Those Living in Hurricane Alley Should Use Social Media Wisely</a></h2>
 									</header>
 									<a id="section1PL" href="images/0_xsvtiBYJqYlHlxmL.jfif" class="image fit"><img id="section1Pic" src="images/0_xsvtiBYJqYlHlxmL.jfif" alt="" style="width:600px;height:370px;"/></a>
+									<div class='embed-container' id="embedcontainer2" style="display:none">
 									<iframe style="padding:20px" id="section1VideoBox"  width="100%" height="300" src=""  frameborder="0" allowfullscreen height="370" width="600"></iframe>
+									</div>
 									<p id="section1P">We are becoming more and more alert day and night, due to the increasing occurrence of hurricanes. As we hear about an approaching hurricane, the first thing most of us would do is check how people around us react to the hazard on social media. You might think it would be wise to start packing up, since your friends are fleeing out of town and running for their lives, or rushing to the nearby Walmart and emptying their inventory on bottled water. Then you start rolling your screen, check the weather forecast, and look for the most up to date information. Now you have the sources, what should you trust?</p>
 									<ul class="actions special">
 										<li><a id="section1B" href="https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f" target="_blank" class="button">Full Story</a></li>
@@ -83,10 +87,12 @@
 								<article>
 									<header>
 										<h2 id="section2H"><a id="section2HL" href="https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e" target="_blank">
-										How Booking Websites Empty Your Wallet</a></h2>
+										How Booking Websites Empty Your Wallet <br> <br></a> </h2>
 									</header>
 									<a id="section2PL" href="images/DTZT7dBV4AAcZpS.jpg" class="image fit"><img id="section2Pic" src="images/DTZT7dBV4AAcZpS.jpg" alt="" style="width:600px;height:370px;"/></a>
+									<div id="embedcontainer3" class='embed-container' style="display:none">
 									<iframe style="padding:20px" id="section2VideoBox"  width="100%" height="300" src=""  frameborder="0" allowfullscreen height="370" width="600"></iframe>
+									</div>
 									<p id="section2P">No matter you travel on business or vacation, booking websites make everything easier for you. However, this convenience does not come free. A quote from the 1970s states that ‘If you are not paying for the product, you are the product.’ These websites are stealing from you in a way you never realized before. And here are some of the witchcraft you need to know.</p>
 									<ul class="actions special">
 										<li><a id="section2B" href="https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e" target="_blank" class="button">Full Story</a></li>
@@ -114,6 +120,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/ming.js"></script>
+			
+			<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 
 	</body>
 </html>
