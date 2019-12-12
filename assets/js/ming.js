@@ -24,8 +24,8 @@ var embedcontainer3 = document.getElementById("embedcontainer3")
 mainVideoBox.style.display = "none";
 section1VideoBox.style.display = "none";
 section2VideoBox.style.display = "none";
-
-
+mainBnt.style.display = "none";
+mainPicBox.style.display = "none";
 
 
 function onReadingTab() {
@@ -33,21 +33,21 @@ function onReadingTab() {
   mainVideoBox.style.display = "none";
   section1VideoBox.style.display = "none";
   section2VideoBox.style.display = "none";
-  postId.style.display = "none";
+  postId.style.display = "block";
   embedcontainer1.style.display = "none";
   embedcontainer2.style.display = "none";
   embedcontainer3.style.display = "none";
-  mainPicBox.style.display = "block";
+  mainPicBox.style.display = "none";
   section1PL.style.display = "block";
   section2PL.style.display = "block";
   mainBnt.innerHTML="Full Story"
   changeSection2Reading()
   mainTatle.innerHTML = "Look Here";
   mainSubTatle.innerHTML = "What if the thing you see, the sound you hear is not so truthful."
-  mainPic.setAttribute("src","images/cat.jpg")
+  // mainPic.setAttribute("src","images/cat.jpg")
   mainPicBox.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
   mainBnt.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
-  
+  mainBnt.style.display = "none";
 }
 
 function onWatchingTab(){
@@ -110,12 +110,12 @@ function changeSection2Reading(){
   section2HL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
   section1HL.innerHTML="Those Living in Hurricane Alley Should Use Social Media Wisely"
   section2HL.innerHTML="How Booking Websites Empty Your Wallet <br> <br>"
-  section1PL.setAttribute('href','images/0_xsvtiBYJqYlHlxmL.jfif')
-  section2PL.setAttribute('href','images/DTZT7dBV4AAcZpS.jpg')
+  section1PL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
+  section2PL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
   section1Pic.setAttribute('src','images/0_xsvtiBYJqYlHlxmL.jfif')
   section2Pic.setAttribute('src','images/DTZT7dBV4AAcZpS.jpg')
-  section1P.innerHTML="We are becoming more and more alert day and night, due to the increasing occurrence of hurricanes. As we hear about an approaching hurricane, the first thing most of us would do is check how people around us react to the hazard on social media. You might think it would be wise to start packing up, since your friends are fleeing out of town and running for their lives, or rushing to the nearby Walmart and emptying their inventory on bottled water. Then you start rolling your screen, check the weather forecast, and look for the most up to date information. Now you have the sources, what should you trust?"
-  section2P.innerHTML="No matter you travel on business or vacation, booking websites make everything easier for you. However, this convenience does not come free. A quote from the 1970s states that ‘If you are not paying for the product, you are the product.’ These websites are stealing from you in a way you never realized before. And here are some of the witchcraft you need to know."
+  section1P.innerHTML="Every year seems to bring stronger and stronger hurricanes. These storms keep us alert day and night. As we hear about an approaching hurricane, we turn to social media to see how everyone else is reacting. We see our friends fleeing town and running for their lives, or rushing to the nearby Walmart and emptying their inventory on bottled water. Then you start scrolling your screen, checking the weather forecast, and looking for the latest information. Now you have the sources, what should you trust?"
+  section2P.innerHTML="No matter whether you travel on business or vacation, booking websites make everything easier for you. However, this convenience does not come free. A quote from Andrew Lewis states that “If you are not paying for the product, you are the product.” These websites are stealing from you in a way you never realized before. And here is some of the witchcraft you need to know."
   section1B.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
   section2B.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
   section1B.innerHTML="Full Story"
@@ -129,7 +129,7 @@ function changeSection2Watching(){
   var url2= urlt2.replace("https://youtu.be","https://youtube.com/embed")
   section1HL.setAttribute('href',urlt1)
   section2HL.setAttribute('href',urlt2)
-  section1HL.innerHTML="Facebook's role in Brexit — and the threat to democracy | Carole Cadwalladr"
+  section1HL.innerHTML="<br>Facebook's role in Brexit | Carole Cadwalladr <br> <br>"
   section2HL.innerHTML="<br> Can we choose to fall out of love? | Dessa <br> <br>"
   section1VideoBox.setAttribute('src',url1)
   section2VideoBox.setAttribute('src',url2)
@@ -146,11 +146,11 @@ function changeSection2Watching(){
 function changeSection2Listening(){
   section1HL.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
   section2HL.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
-  section1HL.innerHTML="<br> <br> Don't Chase the Likes... <br> <br> "
-  section2HL.innerHTML="Music In The Age of Democratization: Gerhard Behles & Matt Black in Conversation"
+  section1HL.innerHTML="Don't Chase the Likes... <br><br>"
+  section2HL.innerHTML="Music In The Age of Democratization"
   section1VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340083175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
   section2VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169306315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-  section1P.innerHTML= "It’s so easy to get caught up chasing likes and followers, but should you let these numbers guide your creative career?In this episode I don’t tell you to disregard social media feedback or tell you it’s irrelevant, but instead encourage you to shift your perspective and look for more helpful metrics."
+  section1P.innerHTML= "It’s so easy to get caught up chasing likes and followers, but should you let these numbers guide your creative career?"
   section2P.innerHTML= "As part of Berlin's Social Media Week, Ninjatune founder and member of A/V group Coldcut, Matt Black and Gerhard Behles, CEO of Ableton and former member of Monolake were hosted by Peter Kirn, editor of createdigitalmusic.com"
   section1B.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
   section2B.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
