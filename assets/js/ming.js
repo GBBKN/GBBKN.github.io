@@ -85,7 +85,9 @@ function onListeningTab(){
   mainVideoBox.style.display = "block";
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
-  postId.style.display = "table";
+  postId.style.display = "block";
+  subPosts1.style.display = "block";
+  subPosts2.style.display = "block";
   embedcontainer1.style.display = "block";
   embedcontainer2.style.display = "block";
   embedcontainer3.style.display = "block";
