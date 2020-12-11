@@ -20,6 +20,8 @@ var postId = document.getElementById("postId")
 var embedcontainer1 = document.getElementById("embedcontainer1")
 var embedcontainer2 = document.getElementById("embedcontainer2")
 var embedcontainer3 = document.getElementById("embedcontainer3")
+var subPosts1 = document.getElementById("subPosts1")
+var subPosts2 = document.getElementById("subPosts2")
 
 mainVideoBox.style.display = "none";
 section1VideoBox.style.display = "none";
@@ -34,6 +36,8 @@ function onReadingTab() {
   section1VideoBox.style.display = "none";
   section2VideoBox.style.display = "none";
   postId.style.display = "block";
+  subPosts1.style.display = "block";
+  subPosts2.style.display = "block";
   embedcontainer1.style.display = "none";
   embedcontainer2.style.display = "none";
   embedcontainer3.style.display = "none";
@@ -56,6 +60,8 @@ function onWatchingTab(){
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
   postId.style.display = "block";
+  subPosts1.style.display = "none";
+  subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
   embedcontainer2.style.display = "block";
   embedcontainer3.style.display = "block";
@@ -79,7 +85,7 @@ function onListeningTab(){
   mainVideoBox.style.display = "block";
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
-  postId.style.display = "block";
+  postId.style.display = "table";
   embedcontainer1.style.display = "block";
   embedcontainer2.style.display = "block";
   embedcontainer3.style.display = "block";
