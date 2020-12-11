@@ -63,11 +63,11 @@ function onWatchingTab(){
   section1PL.style.display = "none";
   section2PL.style.display = "none";
   mainBnt.innerHTML="Watch In New Tab"
-  var turl = "https://youtu.be/GveeYDmbpvA"
+  var turl = "https://drive.google.com/file/d/1dZzfTo8Nx8HK-IEaLxkrreXNlyjEwLxf/preview"
   var url = turl.replace("https://youtu.be","https://youtube.com/embed")
   
-  mainTatle.innerHTML = "Watch Closely";
-  mainSubTatle.innerHTML = "Deepfakes Rising | When Reality is Only Skin Deep"
+  mainTatle.innerHTML = "Video Presentation";
+  mainSubTatle.innerHTML = "Super-spreading Modeling and Prediction"
   mainBnt.setAttribute('href', turl)
   mainVideoBox.setAttribute('src',url)
   changeSection2Watching()
@@ -88,11 +88,11 @@ function onListeningTab(){
   section2PL.style.display = "none";
   mainBnt.innerHTML="Full Story"
   
-  mainTatle.innerHTML = "Listen Carefully";
-  mainSubTatle.innerHTML = "The Cult of Social Media Wellness, Debunked"
-  mainBnt.setAttribute('href', "https://soundcloud.com/user-944127072/the-cult-of-social-media-wellness-debunked")
-  mainVideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/725542732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-  changeSection2Listening()
+  // mainTatle.innerHTML = "Listen Carefully";
+  // mainSubTatle.innerHTML = "The Cult of Social Media Wellness, Debunked"
+  // mainBnt.setAttribute('href', "https://soundcloud.com/user-944127072/the-cult-of-social-media-wellness-debunked")
+  // mainVideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/725542732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+  // changeSection2Listening()
 
 
 }
@@ -123,35 +123,35 @@ function changeSection2Reading(){
 }
 
 function changeSection2Watching(){
-  var urlt1="https://youtu.be/OQSMr-3GGvQ"
-  var urlt2="https://youtu.be/E0KLmBMSjDk"
-  var url1= urlt1.replace("https://youtu.be","https://youtube.com/embed")
-  var url2= urlt2.replace("https://youtu.be","https://youtube.com/embed")
-  section1HL.setAttribute('href',urlt1)
-  section2HL.setAttribute('href',urlt2)
-  section1HL.innerHTML="<br>Facebook's role in Brexit | Carole Cadwalladr <br> <br>"
-  section2HL.innerHTML="<br> Can we choose to fall out of love? | Dessa <br> <br>"
-  section1VideoBox.setAttribute('src',url1)
-  section2VideoBox.setAttribute('src',url2)
-  section1Pic.setAttribute('src','')
-  section2Pic.setAttribute('src','')
-  section1P.innerHTML="In an unmissable talk, journalist Carole Cadwalladr digs into one of the most perplexing events in recent times: the UK's super-close 2016 vote to leave the European Union. Tracking the result to a barrage of misleading Facebook ads targeted at vulnerable Brexit swing voters -- and linking the same players and tactics to the 2016 US presidential election -- Cadwalladr calls out the 'gods of Silicon Valley' for being on the wrong side of history and asks: Are free and fair elections a thing of the past?"
-  section2P.innerHTML="What's the best way to get over heartbreak? Rapper and writer Dessa came up with an unconventional approach after a chance viewing of Helen Fisher's TED Talk about the brains of the lovestruck. In a wryly funny talk, she describes how she worked with a neuroscientist to try to get her brain to fall out of love with her ex -- and shares wisdom about romance that she gained along the way."
-  section1B.setAttribute('href',urlt1)
-  section2B.setAttribute('href',urlt2)
-  section1B.innerHTML="Watch In New Tab"
-  section2B.innerHTML="Watch In New Tab"
+  // var urlt1="https://youtu.be/OQSMr-3GGvQ"
+  // var urlt2="https://youtu.be/E0KLmBMSjDk"
+  // var url1= urlt1.replace("https://youtu.be","https://youtube.com/embed")
+  // var url2= urlt2.replace("https://youtu.be","https://youtube.com/embed")
+  // section1HL.setAttribute('href',urlt1)
+  // section2HL.setAttribute('href',urlt2)
+  // section1HL.innerHTML="<br>Facebook's role in Brexit | Carole Cadwalladr <br> <br>"
+  // section2HL.innerHTML="<br> Can we choose to fall out of love? | Dessa <br> <br>"
+  // section1VideoBox.setAttribute('src',url1)
+  // section2VideoBox.setAttribute('src',url2)
+  // section1Pic.setAttribute('src','')
+  // section2Pic.setAttribute('src','')
+  // section1P.innerHTML="In an unmissable talk, journalist Carole Cadwalladr digs into one of the most perplexing events in recent times: the UK's super-close 2016 vote to leave the European Union. Tracking the result to a barrage of misleading Facebook ads targeted at vulnerable Brexit swing voters -- and linking the same players and tactics to the 2016 US presidential election -- Cadwalladr calls out the 'gods of Silicon Valley' for being on the wrong side of history and asks: Are free and fair elections a thing of the past?"
+  // section2P.innerHTML="What's the best way to get over heartbreak? Rapper and writer Dessa came up with an unconventional approach after a chance viewing of Helen Fisher's TED Talk about the brains of the lovestruck. In a wryly funny talk, she describes how she worked with a neuroscientist to try to get her brain to fall out of love with her ex -- and shares wisdom about romance that she gained along the way."
+  // section1B.setAttribute('href',urlt1)
+  // section2B.setAttribute('href',urlt2)
+  // section1B.innerHTML="Watch In New Tab"
+  // section2B.innerHTML="Watch In New Tab"
 }
 
 function changeSection2Listening(){
-  section1HL.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
-  section2HL.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
-  section1HL.innerHTML="Don't Chase the Likes... <br><br>"
-  section2HL.innerHTML="Music In The Age of Democratization"
-  section1VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340083175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-  section2VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169306315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-  section1P.innerHTML= "It’s so easy to get caught up chasing likes and followers, but should you let these numbers guide your creative career?"
-  section2P.innerHTML= "As part of Berlin's Social Media Week, Ninjatune founder and member of A/V group Coldcut, Matt Black and Gerhard Behles, CEO of Ableton and former member of Monolake were hosted by Peter Kirn, editor of createdigitalmusic.com"
-  section1B.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
-  section2B.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
+  // section1HL.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
+  // section2HL.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
+  // section1HL.innerHTML="Don't Chase the Likes... <br><br>"
+  // section2HL.innerHTML="Music In The Age of Democratization"
+  // section1VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/340083175&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+  // section2VideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169306315&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
+  // section1P.innerHTML= "It’s so easy to get caught up chasing likes and followers, but should you let these numbers guide your creative career?"
+  // section2P.innerHTML= "As part of Berlin's Social Media Week, Ninjatune founder and member of A/V group Coldcut, Matt Black and Gerhard Behles, CEO of Ableton and former member of Monolake were hosted by Peter Kirn, editor of createdigitalmusic.com"
+  // section1B.setAttribute('href','https://soundcloud.com/creativepeptalk/147-dont-chase-the-likes')
+  // section2B.setAttribute('href','https://soundcloud.com/ableton/smw_music_in_the_age_of_democratization')
 }
