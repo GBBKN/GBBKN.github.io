@@ -17,6 +17,11 @@ var section2Pic = document.getElementById("section2Pic")
 var section1B = document.getElementById("section1B")
 var section2B = document.getElementById("section2B")
 var postId = document.getElementById("postId")
+var postId2 = document.getElementById("postId2")
+var postId3 = document.getElementById("postId3")
+var postId4 = document.getElementById("postId4")
+var postId5 = document.getElementById("postId5")
+
 var embedcontainer1 = document.getElementById("embedcontainer1")
 var embedcontainer2 = document.getElementById("embedcontainer2")
 var embedcontainer3 = document.getElementById("embedcontainer3")
@@ -36,6 +41,10 @@ function onReadingTab() {
   section1VideoBox.style.display = "none";
   section2VideoBox.style.display = "none";
   postId.style.display = "none";
+  postId2.style.display = "block";
+  postId3.style.display = "block";
+  postId4.style.display = "block";
+  postId5.style.display = "none";
   subPosts1.style.display = "block";
   subPosts2.style.display = "block";
   embedcontainer1.style.display = "none";
@@ -49,8 +58,8 @@ function onReadingTab() {
   // mainTatle.innerHTML = "Look Here";
   // mainSubTatle.innerHTML = "What if the thing you see, the sound you hear is not so truthful."
   // mainPic.setAttribute("src","images/cat.jpg")
-  mainPicBox.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
-  mainBnt.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
+  // mainPicBox.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
+  // mainBnt.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
   mainBnt.style.display = "none";
 }
 
@@ -60,6 +69,10 @@ function onWatchingTab(){
   section1VideoBox.style.display = "block";
   section2VideoBox.style.display = "block";
   postId.style.display = "block";
+  postId2.style.display = "none";
+  postId3.style.display = "none";
+  postId4.style.display = "none";
+  postId5.style.display = "none";
   subPosts1.style.display = "none";
   subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
@@ -69,9 +82,8 @@ function onWatchingTab(){
   section1PL.style.display = "none";
   section2PL.style.display = "none";
   mainBnt.innerHTML="Watch In New Tab"
-  var turl = "https://drive.google.com/file/d/1dZzfTo8Nx8HK-IEaLxkrreXNlyjEwLxf/preview"
+  var turl = "https://drive.google.com/file/d/1TfbT0QkiXpAaWGgb18WtPoJozUNncd6z/preview"
   var url = turl.replace("https://youtu.be","https://youtube.com/embed")
-  
   mainTatle.innerHTML = "Video Presentation";
   mainSubTatle.innerHTML = "Super-spreading Modeling and Prediction"
   mainBnt.setAttribute('href', turl)
@@ -82,12 +94,16 @@ function onWatchingTab(){
 
 function onListeningTab(){
   changeActive("listeningTab")
-  mainVideoBox.style.display = "block";
-  section1VideoBox.style.display = "block";
-  section2VideoBox.style.display = "block";
-  postId.style.display = "block";
-  subPosts1.style.display = "block";
-  subPosts2.style.display = "block";
+  mainVideoBox.style.display = "none";
+  section1VideoBox.style.display = "none";
+  section2VideoBox.style.display = "none";
+  postId.style.display = "none";
+  postId2.style.display = "none";
+  postId3.style.display = "none";
+  postId4.style.display = "none";
+  postId5.style.display = "block";
+  subPosts1.style.display = "none";
+  subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
   embedcontainer2.style.display = "block";
   embedcontainer3.style.display = "block";
@@ -100,7 +116,7 @@ function onListeningTab(){
   // mainSubTatle.innerHTML = "The Cult of Social Media Wellness, Debunked"
   // mainBnt.setAttribute('href', "https://soundcloud.com/user-944127072/the-cult-of-social-media-wellness-debunked")
   // mainVideoBox.setAttribute('src',"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/725542732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true")
-  // changeSection2Listening()
+  changeSection2Listening()
 
 
 }
