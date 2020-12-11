@@ -35,7 +35,7 @@ function onReadingTab() {
   mainVideoBox.style.display = "none";
   section1VideoBox.style.display = "none";
   section2VideoBox.style.display = "none";
-  postId.style.display = "block";
+  postId.style.display = "none";
   subPosts1.style.display = "block";
   subPosts2.style.display = "block";
   embedcontainer1.style.display = "none";
@@ -46,8 +46,8 @@ function onReadingTab() {
   section2PL.style.display = "none";
   mainBnt.innerHTML="Full Story"
   changeSection2Reading()
-  mainTatle.innerHTML = "Look Here";
-  mainSubTatle.innerHTML = "What if the thing you see, the sound you hear is not so truthful."
+  // mainTatle.innerHTML = "Look Here";
+  // mainSubTatle.innerHTML = "What if the thing you see, the sound you hear is not so truthful."
   // mainPic.setAttribute("src","images/cat.jpg")
   mainPicBox.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
   mainBnt.setAttribute('href', 'https://en.wikipedia.org/wiki/Optical_illusion')
@@ -114,20 +114,20 @@ function changeActive(tabName){
 }
 
 function changeSection2Reading(){
-  section1HL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
-  section2HL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
-  section1HL.innerHTML="Those Living in Hurricane Alley Should Use Social Media Wisely"
-  section2HL.innerHTML="How Booking Websites Empty Your Wallet <br> <br>"
-  section1PL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
-  section2PL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
-  section1Pic.setAttribute('src','images/0_xsvtiBYJqYlHlxmL.jfif')
-  section2Pic.setAttribute('src','images/DTZT7dBV4AAcZpS.jpg')
-  section1P.innerHTML="Every year seems to bring stronger and stronger hurricanes. These storms keep us alert day and night. As we hear about an approaching hurricane, we turn to social media to see how everyone else is reacting. We see our friends fleeing town and running for their lives, or rushing to the nearby Walmart and emptying their inventory on bottled water. Then you start scrolling your screen, checking the weather forecast, and looking for the latest information. Now you have the sources, what should you trust?"
-  section2P.innerHTML="No matter whether you travel on business or vacation, booking websites make everything easier for you. However, this convenience does not come free. A quote from Andrew Lewis states that “If you are not paying for the product, you are the product.” These websites are stealing from you in a way you never realized before. And here is some of the witchcraft you need to know."
-  section1B.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
-  section2B.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
-  section1B.innerHTML="Full Story"
-  section2B.innerHTML="Full Story"
+  // section1HL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
+  // section2HL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
+  // section1HL.innerHTML="Those Living in Hurricane Alley Should Use Social Media Wisely"
+  // section2HL.innerHTML="How Booking Websites Empty Your Wallet <br> <br>"
+  // section1PL.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
+  // section2PL.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
+  // section1Pic.setAttribute('src','images/0_xsvtiBYJqYlHlxmL.jfif')
+  // section2Pic.setAttribute('src','images/DTZT7dBV4AAcZpS.jpg')
+  // section1P.innerHTML="Every year seems to bring stronger and stronger hurricanes. These storms keep us alert day and night. As we hear about an approaching hurricane, we turn to social media to see how everyone else is reacting. We see our friends fleeing town and running for their lives, or rushing to the nearby Walmart and emptying their inventory on bottled water. Then you start scrolling your screen, checking the weather forecast, and looking for the latest information. Now you have the sources, what should you trust?"
+  // section2P.innerHTML="No matter whether you travel on business or vacation, booking websites make everything easier for you. However, this convenience does not come free. A quote from Andrew Lewis states that “If you are not paying for the product, you are the product.” These websites are stealing from you in a way you never realized before. And here is some of the witchcraft you need to know."
+  // section1B.setAttribute('href','https://medium.com/@ming98/those-living-in-hurricane-alley-should-use-social-media-wisely-de0aaf823d4f')
+  // section2B.setAttribute('href','https://medium.com/@ming98/how-booking-websites-empty-your-wallet-4fe4c7b102e')
+  // section1B.innerHTML="Full Story"
+  // section2B.innerHTML="Full Story"
 }
 
 function changeSection2Watching(){
