@@ -38,8 +38,8 @@ function onReadingTab() {
   embedcontainer2.style.display = "none";
   embedcontainer3.style.display = "none";
   mainPicBox.style.display = "none";
-  section1PL.style.display = "block";
-  section2PL.style.display = "block";
+  section1PL.style.display = "none";
+  section2PL.style.display = "none";
   mainBnt.innerHTML="Full Story"
   changeSection2Reading()
   mainTatle.innerHTML = "Look Here";
