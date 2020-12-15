@@ -21,6 +21,8 @@ var postId2 = document.getElementById("postId2")
 var postId3 = document.getElementById("postId3")
 var postId4 = document.getElementById("postId4")
 var postId5 = document.getElementById("postId5")
+var postId6 = document.getElementById("postId6")
+var postId7 = document.getElementById("postId7")
 
 var embedcontainer1 = document.getElementById("embedcontainer1")
 var embedcontainer2 = document.getElementById("embedcontainer2")
@@ -45,6 +47,8 @@ function onReadingTab() {
   postId3.style.display = "block";
   postId4.style.display = "block";
   postId5.style.display = "none";
+  postId6.style.display = "block";
+  postId7.style.display = "block";
   subPosts1.style.display = "block";
   subPosts2.style.display = "block";
   embedcontainer1.style.display = "none";
@@ -73,6 +77,8 @@ function onWatchingTab(){
   postId3.style.display = "none";
   postId4.style.display = "none";
   postId5.style.display = "none";
+  postId6.style.display = "none";
+  postId7.style.display = "none";
   subPosts1.style.display = "none";
   subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
@@ -102,6 +108,8 @@ function onListeningTab(){
   postId3.style.display = "none";
   postId4.style.display = "none";
   postId5.style.display = "block";
+  postId6.style.display = "none";
+  postId7.style.display = "none";
   subPosts1.style.display = "none";
   subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
