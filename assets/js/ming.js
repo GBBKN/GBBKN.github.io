@@ -23,6 +23,7 @@ var postId4 = document.getElementById("postId4")
 var postId5 = document.getElementById("postId5")
 var postId6 = document.getElementById("postId6")
 var postId7 = document.getElementById("postId7")
+var postId8 = document.getElementById("postId8")
 
 var embedcontainer1 = document.getElementById("embedcontainer1")
 var embedcontainer2 = document.getElementById("embedcontainer2")
@@ -49,6 +50,7 @@ function onReadingTab() {
   postId5.style.display = "none";
   postId6.style.display = "block";
   postId7.style.display = "block";
+  postId8.style.display = "block";
   subPosts1.style.display = "block";
   subPosts2.style.display = "block";
   embedcontainer1.style.display = "none";
@@ -79,6 +81,7 @@ function onWatchingTab(){
   postId5.style.display = "none";
   postId6.style.display = "none";
   postId7.style.display = "none";
+  postId8.style.display = "none";
   subPosts1.style.display = "none";
   subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";
@@ -110,6 +113,7 @@ function onListeningTab(){
   postId5.style.display = "block";
   postId6.style.display = "none";
   postId7.style.display = "none";
+  postId8.style.display = "none";
   subPosts1.style.display = "none";
   subPosts2.style.display = "none";
   embedcontainer1.style.display = "block";

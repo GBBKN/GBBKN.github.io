@@ -87,32 +87,66 @@
 								<li> Test the impact of different restriction policies.</li>
 							</article>
 							<article id="postId6" class="post featured">
-								<h2 >SEIR Model</h2>
+								<h2>Approaches</h2>
+								<p>Our model is developed based on the classical SEIR compartment model.
+									It’s the one of the most classic one and many models are derivatives of this basic form. </p>
+								<h3 >SEIR Model</h3>
 								<img src="images/SEIR.png" alt="SEIR Model" width="90%">
-								<h2 >Modified SEIR Model</h2>
+								<h3 >Modified SEIR Model</h3>
+								<p>Based on the classic model, we developed our modified one with the super-spreading compartment and the dead compartment. The super-spreading compartment here is especially designed for capturing the super-spreading in the disease transmission and the dead compartment is used to get closer to the epidemiological lethal characteristics of COVID-19. Each parameter here still represents the probability of flowing from the previous compartment to the next compartment.</p>
 								<img src="images/Modified.png" alt="Modified SEIR Model" width="90%">
 								<p>Based on the classic model, we developed our modified one with the super-spreading compartment and the dead compartment. The super-spreading compartment here is especially designed for capturing the super-spreading in the disease transmission and the dead compartment is used to get closer to the epidemiological lethal characteristics of COVID-19. Each parameter here still represents the probability of flowing from the previous compartment to the next compartment.</p>
-								<h2 >Modified SEIR Model as Differential Equations</h2>
-								<img src="images/Modified_eq.png" alt="Modified SEIR Model Equations" width="90%">
-								<h2 >Modified SEIR Model as Differential Equations in Markov Mode</h2>
+								<h3 >Modified SEIR Model as Differential Equations</h3>
+								<img src="images/Modified_eq.png" alt="Modified SEIR Model Equations" width="70%">
+								<h3 >Modified SEIR Model as Differential Equations in Markov Mode</h3>
 								<img src="images/Modified_eq_markov.png" alt="Modified SEIR Model Equations" width="90%">
+								<h3>Parameters for Modified SEIR Model</h3>
+								<figure>
+									<img src="images/param.png" alt="Parameters for Modified SEIR Model" width="80%">
+									<!-- <figcaption>Parameters for Modified SEIR Model</figcaption> -->
+								</figure>
 							</article>
 							<article id="postId7" class="post featured">
 								<h2 >Results</h2>
+								<h3>Basic SEIR model</h3>
+								<p>Here we use 10 k people as the whole population and performs a simulation based on the basic SEIR model. Because this model is a one-way flow, eventually everyone will be infected and recovered. So the purple line representing the recovered compartment gradually comes to the whole population number. And on the 77th day of the simulation, it reached the peak.</p>
+								
 								<figure>
-									<img src="images/param.png" alt="Parameters for Modified SEIR Model" width="80%">
-									<figcaption>Parameters for Modified SEIR Model</figcaption>
+									<img src="images/R_SEIR.png" alt="Results for Modified SEIR Model" width="100%">
+									<figcaption>The simulation result of the modified SEIR model. The blue, orange, yellow, purple, green and light blue line represent the change during the simulation of the Susceptible, Exposed, Infected, Recovered, Super-spreaders and Dead respectively.</figcaption>
 								</figure>
-								<br><br>
+								<br>
+								<h3>Modified SEIR model</h3>
+								<p>From the figure below, we can see that the peak of the simulated epidemic was about 50 days earlier than the previous one, it reached the peak at day 27. This is very similar to the pattern of previous COVID outbreaks. The disease did not spread for a long time before it broke out but reached its peak in a short time. The response time left for the government and medical institutions is very limited.</p>
 								<figure>
 									<img src="images/Re_modified.png" alt="Results for Modified SEIR Model" width="100%">
 									<figcaption>The simulation result of the modified SEIR model. The blue, orange, yellow, purple, green and light blue line represent the change during the simulation of the Susceptible, Exposed, Infected, Recovered, Super-spreaders and Dead respectively.</figcaption>
 								</figure>
-								<br><br>
+								<br>
+								<h3>Modified SEIR model with Restriction Policy</h3>
+								<p>If a small minority of cases leads to most of the spread, then stopping these people from transmitting should bring the pandemic under control. So we next predict the impact of the “stay at home order”.  We used the modified SEIR model to predict what it would be like if the stay at home order was issued on the day 20th, day 18th, and day 15th days. When the stay-at-home order started, we gradually reduced the contact rate r between people and limited it to less than 5.</p>
+								<figure>
+									<img src="images/Re_3.png" alt="Results for Modified SEIR Model" width="100%">
+									<figcaption></figcaption>
+								</figure>
+								<p>When the order is issued on day 20th, we can see that there is no significant difference from the previous one. The peak came on day 27th, but the number infected people of peaks dropped by about 300. Now is 2700. If the order is issued on day 18th, We found that the peak was delayed by three days. The peak came on day 30th, and the number infected people of peaks dropped down to 2200. Noted that we simulated on a really small population with only 10k people, it would be a much more significant difference if the population is more than millions. And if the order could be issued much more earlier, let’s say on day 15th, The peak was postponed for 13 days and the number of infected people of the peak is lower to 1.7k.</p>
+								<p>In other words, if the policy can be implemented earlier and people can abide strictly  we will have more time for the disease. The peak will come later. There will be fewer people. The resources of the hospital will be more adequate. Then the corresponding death rate will be greatly reduced.</p>
+								<br>
+								<h3>Simulation on the complex contact network</h3>
+								<p>Here we used a complex network and an improved SEIR model to simulate the process of virus spread in the population. Assuming that each node on the network is an individual, and the edge represents the contact between two individuals. Based on the SEIR model, nodes (individuals) have four states as described in the basic SEIR model.</p>
 								<figure>
 									<img src="images/Re_4.png" alt="Results for Modified SEIR Model" width="100%">
 									<figcaption>The simulation result on the complex contact network of the effect of the stay-at-home order with the modified SEIR model. The different color and size of each node represent the degree. The bigger and brighter ones represents the "hub".</figcaption>
 								</figure>
+								<br>
+								<p>On the left side is the control group. We did not limit any activity on all nodes. The infected counts basically follows the exponential growth as most infectious disease do. For the middle one, we change the contact rate of all nodes whose degree is greater than 15. These nodes are "hubs" in the network. Most nodes are connected to them and if they are under controlled, the infected counts will be limited to a relatively low level. On the right side, we further simulated the result that only limits the "super-hubs" in the network. Here we defined the "super-hubs" as the nodes whose degree is greater than 30. From the figure we can tell that although the "hubs" were isolated, the spread of the epidemic was only delayed to a certain extent because of the widely connection among nodes. It couldn't be completely restrained. The node (individual) does not have to be in contact with the hubs, but can also indirectly contact through other nodes and then get infected. Therefore, the effect of only controlling "hubs" to suppress the epidemic is not ideal.</p>
+								
+							</article>
+							<article id="postId8" class="post featured">
+								<h2>Conclusion</h2>
+								<p>It is worth noting that super-spreaders are not equivalent to super-spreading incidents, and super-spreading incidents are not only caused by super-spreaders. Host behavior and living environment will have a certain impact on the super-spreading event. Although limited to the current technical methods, we cannot judge who is a super spreader in advance, but we can completely control the other two factors in the super spread event, the behavior and environment. 
+								</p>
+								<p>Because the spread of the virus will also be affected by factors such as the ability of the virus to infect, the actual transmission dynamics model is much more complicated. Our work only explains some phenomena in the anti-epidemic process from the perspective of the network structure, and the conclusions can only be used for experiments or quantitative decision-making reference.</p>
 							</article>
 							<article id="postId4" class="post featured">
 								<h2 >Related Work</h2>
